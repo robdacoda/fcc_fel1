@@ -1,221 +1,181 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;head&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Required meta tags --&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="utf-8" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>name="viewport"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>content="width=device-width, initial-scale=1, shrink-to-fit=no"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="./this.css" /&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Random Quote Generator&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;div id="quote-box"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="text-author-container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div id="text"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div id="author"&gt;&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="buttons-container"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;button id="new-quote" class="button button1" onclick="getStuff()"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>New quote</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>id="tweet-quote"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>class="button2 anchorButton"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>href="twitter.com/intent/tweet"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>target="blank"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">              </span>&gt;&lt;img width="40px" src="./twitter.svg"</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>/&gt;&lt;/a&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!--#buttons-container--&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>&lt;!--#quote-box--&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!--#container--&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"&gt;&lt;/script&gt;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;style&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>body {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-sizing: border-box;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>margin: 20px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>/* width: 100%; */</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 100vh;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 90vw;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 90vh;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#quote-box {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>flex-direction: column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content: space-around;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 80%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 60%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>min-width: 250px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>min-height: 250px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border: 3px black solid;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 30px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 10px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: rgba(75, 94, 171, 0.612);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#text-author-container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>flex-direction: column;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 90%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#text-author-container,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#text,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#author {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>align-items: center;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 13px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border: 1px white solid;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#text,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#author {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 90%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>min-width: 200px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>box-sizing: border-box;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>padding: 30px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#text {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content: left;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#author {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content: right;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align: right;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>min-height: 80px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 30%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>#buttons-container {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 100%;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: flex;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>flex-direction: row;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>justify-content: space-evenly;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.button1 {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: inline-block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 62px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 43px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>text-align: center;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 6px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.button1:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: #9ef59a;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.anchorButton {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>display: inline-block;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 40px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>height: 40px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border: 1.5px solid black;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: white;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>border-radius: 6px;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.anchorButton:hover {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>background-color: #63a3f2;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>// get quote</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>let bigLongString =</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere, enim architecto odio doloribus quos. Natus ex cumque rerum, voluptatem minus rem consequatur assumenda dolorum error officia id fugit quasi exercitationem maxime, dolores doloribus dicta perspiciatis tempora ad esse numquam odio molestiae. Laboriosam iure id beatae, odio enim ex iusto voluptas laudantium maxime voluptates fugit dolorum harum aperiam doloremque dignissimos ab eius repellat cumque esse, tempore autem. Aspernatur, recusandae velit.";</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function getRandomInt(max) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return Math.floor(Math.random() * max);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function getQuote() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let x = getRandomInt(30);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let y = getRandomInt(200);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>if (x &lt; y) {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return bigLongString.slice(x, y);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>} else {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">      </span>return bigLongString.slice(y, x);</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log(getQuote());</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>console.log("Hello Wuorld");</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>let authorName = [];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>authorName = ["Fred", "Sue", "Joe", "Random Man", "Molly"];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function getAuthorName() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>return authorName[Math.round(getRandomInt(5))];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>function getStuff() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById("text").innerText = getQuote();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById("author").innerText = "-<span class="Apple-converted-space">  </span>" + getAuthorName();</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>getStuff();</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"><br>
-</span></p>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./this.css" />
+    <title>Random Quote Generator</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="quote-box">
+        <div id="text-author-container">
+          <div id="text"></div>
+          <div id="author"></div>
+        </div>
+
+        <div id="buttons-container">
+          <button id="new-quote" class="button button1" onclick="getStuff()">
+            New quote
+          </button>
+
+          <div>
+            <a
+              id="tweet-quote"
+              class="button2 anchorButton"
+              href="twitter.com/intent/tweet"
+              target="blank"
+              ><img width="40px" src="./twitter.svg"
+            /></a>
+          </div>
+        </div>
+        <!--#buttons-container-->
+      </div>
+      <!--#quote-box-->
+    </div>
+    <!--#container-->
+  </body>
 </html>
+
+<style>
+  body {
+    box-sizing: border-box;
+    margin: 20px;
+    /* width: 100%; */
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #container {
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #quote-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 60%;
+    min-width: 250px;
+    min-height: 250px;
+    border: 3px black solid;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(75, 94, 171, 0.612);
+  }
+
+  #text-author-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  #text-author-container,
+  #text,
+  #author {
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 13px;
+    border: 1px white solid;
+  }
+  #text,
+  #author {
+    width: 90%;
+    min-width: 200px;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  #text {
+    justify-content: left;
+  }
+  #author {
+    justify-content: right;
+    text-align: right;
+    min-height: 80px;
+    height: 30%;
+  }
+
+  #buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .button1 {
+    display: inline-block;
+    width: 62px;
+    height: 43px;
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .button1:hover {
+    background-color: #9ef59a;
+  }
+
+  .anchorButton {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .anchorButton:hover {
+    background-color: #63a3f2;
+  }
+</style>
+
+<script>
+  // get quote
+  let bigLongString =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere, enim architecto odio doloribus quos. Natus ex cumque rerum, voluptatem minus rem consequatur assumenda dolorum error officia id fugit quasi exercitationem maxime, dolores doloribus dicta perspiciatis tempora ad esse numquam odio molestiae. Laboriosam iure id beatae, odio enim ex iusto voluptas laudantium maxime voluptates fugit dolorum harum aperiam doloremque dignissimos ab eius repellat cumque esse, tempore autem. Aspernatur, recusandae velit.";
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  function getQuote() {
+    let x = getRandomInt(30);
+    let y = getRandomInt(200);
+    if (x < y) {
+      return bigLongString.slice(x, y);
+    } else {
+      return bigLongString.slice(y, x);
+    }
+  }
+  console.log(getQuote());
+  console.log("Hello Wuorld");
+
+  let authorName = [];
+  authorName = ["Fred", "Sue", "Joe", "Random Man", "Molly"];
+  function getAuthorName() {
+    return authorName[Math.round(getRandomInt(5))];
+  }
+
+  function getStuff() {
+    document.getElementById("text").innerText = getQuote();
+    document.getElementById("author").innerText = "-  " + getAuthorName();
+  }
+
+  getStuff();
+</script>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
